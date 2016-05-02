@@ -1,10 +1,20 @@
+##------------------------------------------
+##--- Author: Pradeep Singh
+##--- Date: 1st May 2016
+##--- Version: 1.0
+##--- Python Ver: 2.7
+##--- Description: This python code will listen to MQTT Topic and print the messages on console
+##------------------------------------------
+
 import paho.mqtt.client as mqtt
 
 # Define Variables
 MQTT_BROKER = "iot.eclipse.org"
+MQTT_TOPIC = "Replace this string with your MQTT Topic"
+
+
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
-MQTT_TOPIC = "testTopic/APC_UPS_EVENTS"
 
 # Define on_connect event Handler
 def on_connect(mosq, obj, rc):
