@@ -1,10 +1,20 @@
+##------------------------------------------
+##--- Author: Pradeep Singh
+##--- Date: 1st May 2016
+##--- Version: 1.0
+##--- Raspberry Pi OS: Raspbian
+##--- Python Ver: 2.7
+##--- Description: This python code will read command line argument and publish that to MQTT
+##------------------------------------------
+
+
 # Import package
 import argparse
 import paho.mqtt.client as mqtt
 
 # Define Variables
 MQTT_BROKER = "iot.eclipse.org"
-MQTT_TOPIC = "testTopic/APC_UPS_EVENTS"
+MQTT_TOPIC = "Replace this string with your MQTT Topic"
 
 
 MQTT_PORT = 1883
